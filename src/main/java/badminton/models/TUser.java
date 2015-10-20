@@ -1,5 +1,11 @@
 package badminton.models;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.extern.log4j.Log4j;
+
+import javax.annotation.sql.DataSourceDefinition;
 import javax.persistence.*;
 
 /**
@@ -7,6 +13,10 @@ import javax.persistence.*;
  */
 @Entity
 @Table(name="t_user",catalog = "sports")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Log4j
 public class TUser {
 
     @Id
@@ -17,27 +27,4 @@ public class TUser {
 
     private Boolean userGender;
 
-    public Integer getId() {
-        return id;
-    }
-
-    public void setId(Integer id) {
-        this.id = id;
-    }
-
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public Boolean getUserGender() {
-        return userGender;
-    }
-
-    public void setUserGender(Boolean userGender) {
-        this.userGender = userGender;
-    }
 }
