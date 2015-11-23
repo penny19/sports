@@ -7,11 +7,20 @@
     </database-info>
     <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
     <schema name="" catalog="sports"/>
+    <table name="t_level" schema="" catalog="sports" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="level_intro" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK_qm73eekyvt2fluji23by1o9to" table="t_user" schema="" catalog="sports" columns="level"/>
+    </table>
     <table name="t_user" schema="" catalog="sports" type="TABLE">
-      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="user_gender" sqlType="BIT" precision="1" scale="0" nullable="true" jdbcType="-7"/>
       <column name="user_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="level" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_qm73eekyvt2fluji23by1o9to" columns="level" ref-table="t_level" ref-schema="" ref-catalog="sports" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK_qm73eekyvt2fluji23by1o9to" unique="false" columns="level"/>
     </table>
   </data-source>
 </component>
