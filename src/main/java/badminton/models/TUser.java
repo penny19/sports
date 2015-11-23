@@ -24,7 +24,11 @@ public class TUser {
     private Integer id;
 
     private String userName;
-
     private Boolean userGender;
+
+    @ManyToOne
+    private TLevel Level;
+
+
 
 }
