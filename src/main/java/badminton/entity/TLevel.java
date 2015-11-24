@@ -1,4 +1,4 @@
-package badminton.models;
+package badminton.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

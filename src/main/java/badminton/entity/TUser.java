@@ -1,11 +1,11 @@
-package badminton.models;
+package badminton.entity;
 
+import badminton.entity.TLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.log4j.Log4j;
 
-import javax.annotation.sql.DataSourceDefinition;
 import javax.persistence.*;
 
 /**
