@@ -8,7 +8,7 @@
     <!-- CORS filter -->
     <filter>
         <filter-name>cors</filter-name>
-        <filter-class>badminton.common.CorsFilter</filter-class>
+        <filter-class>badminton.common.Util.CorsFilter</filter-class>
     </filter>
 
     <filter-mapping>

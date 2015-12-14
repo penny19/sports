@@ -5,7 +5,7 @@
  * This is NOT a freeware,use is subject to license terms.
  */
 
-package badminton.common;
+package badminton.common.Util;
 
 import com.google.common.collect.Lists;
 import com.google.gson.Gson;
