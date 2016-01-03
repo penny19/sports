@@ -1,4 +1,4 @@
-package badminton.common;
+package badminton.common.Util;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
