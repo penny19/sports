@@ -7,6 +7,17 @@
     </database-info>
     <case-sensitivity plain-identifiers="mixed" quoted-identifiers="upper"/>
     <schema name="" catalog="sports"/>
+    <table name="t_club" schema="" catalog="sports" type="TABLE">
+      <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="active_range" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="club_name" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="found_time" sqlType="DATETIME" precision="19" scale="0" nullable="true" jdbcType="93"/>
+      <column name="intro" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="founder" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK_1oagjlt277a4s42lsxijnsua7" columns="founder" ref-table="t_user" ref-schema="" ref-catalog="sports" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <index name="FK_1oagjlt277a4s42lsxijnsua7" unique="false" columns="founder"/>
+    </table>
     <table name="t_level" schema="" catalog="sports" type="TABLE">
       <column name="id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="level_intro" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
@@ -20,6 +31,7 @@
       <column name="level" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="FK_qm73eekyvt2fluji23by1o9to" columns="level" ref-table="t_level" ref-schema="" ref-catalog="sports" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FK_1oagjlt277a4s42lsxijnsua7" table="t_club" schema="" catalog="sports" columns="founder"/>
       <index name="FK_qm73eekyvt2fluji23by1o9to" unique="false" columns="level"/>
     </table>
   </data-source>

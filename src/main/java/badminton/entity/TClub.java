@@ -1,32 +1,38 @@
 package badminton.entity;
 
-import badminton.entity.TLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.log4j.Log4j;
 
 import javax.persistence.*;
+import java.util.Date;
 
 /**
  * Created by penny19 on 15/10/11.
  */
 @Entity
-@Table(name="t_user",catalog = "sports")
+@Table(name="t_club",catalog = "sports")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Log4j
-public class TUser {
+public class TClub {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    private String userName;
-    private Boolean userGender;
+    private String clubName;
+
+    private Date foundTime;
+
+    private String activeRange;
 
     @ManyToOne
-    private TLevel Level;
+    private TUser founder;
+
+    private String intro;
+
 
 }
