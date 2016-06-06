@@ -5,14 +5,13 @@
  * This is NOT a freeware,use is subject to license terms.
  */
 
-package badminton.common.Response;
+package com.tg8.common.Response;
 
 /**
- * Created on 2015/05/20.
  *
  * @version V1.0
- * @Date 15/05/20
- * @author WangZhonghao
+ * @Date 16/06/06
+ * @author penny
  */
 @SuppressWarnings("all")
 public enum ResponseStatus {

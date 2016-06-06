@@ -1,4 +1,4 @@
-package badminton;
+package com.tg8;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

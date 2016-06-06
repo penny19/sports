@@ -1,4 +1,4 @@
-package badminton.common.Util;
+package com.tg8.common.Util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;

@@ -5,7 +5,7 @@
  * This is NOT a freeware,use is subject to license terms.
  */
 
-package badminton.common.Response;
+package com.tg8.common.Response;
 
 import lombok.Data;
 
@@ -18,8 +18,8 @@ import java.util.List;
  * @param <T>
  *
  * @version V1.0
- * @Date 15/05/20
- * @author bchy
+ * @Date 16/06/06
+ * @author penny
  */
 @Data
 @SuppressWarnings("all")

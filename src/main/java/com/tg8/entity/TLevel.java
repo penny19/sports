@@ -1,4 +1,4 @@
-package badminton.entity;
+package com.tg8.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,11 +14,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Table(name="t_level",catalog = "sports")
-public class TLevel {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+public class TLevel extends IdEntity {
 
     private String levelIntro;
 

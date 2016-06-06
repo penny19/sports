@@ -1,5 +1,6 @@
-package badminton.entity;
+package com.tg8.repo;
 
+import com.tg8.entity.TUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

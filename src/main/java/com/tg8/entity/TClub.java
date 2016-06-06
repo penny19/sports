@@ -1,4 +1,4 @@
-package badminton.entity;
+package com.tg8.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,11 +17,7 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Log4j
-public class TClub {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+public class TClub extends IdEntity {
 
     private String clubName;
 

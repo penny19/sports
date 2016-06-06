@@ -1,6 +1,5 @@
-package badminton.entity;
+package com.tg8.entity;
 
-import badminton.entity.TLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -17,11 +16,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Log4j
-public class TUser {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer id;
+public class TUser extends IdEntity {
 
     private String userName;
     private Boolean userGender;

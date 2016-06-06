@@ -5,7 +5,7 @@
  * This is NOT a freeware,use is subject to license terms.
  */
 
-package badminton.common.Util;
+package com.tg8.common.Util;
 
 
 import org.apache.commons.collections4.CollectionUtils;
